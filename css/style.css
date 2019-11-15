@@ -180,10 +180,13 @@ body {
   transform: translateY(0); }
 
 .card {
-  background-color: orangered;
-  height: 50rem;
-  transition: all .8s; }
-  .card:hover {
+  perspective: 150rem;
+  -moz-perspective: 150rem; }
+  .card_side {
+    background-color: orangered;
+    height: 50rem;
+    transition: all .8s; }
+  .card:hover .card_side {
     transform: rotateY(180deg); }
 
 .composition {
